@@ -75,13 +75,7 @@ extensions = [
             extra_compile_args = ["-ffast-math",'-O3']))
 ]
 
-setup_args = {'name':'NPTFit',
-    'version':'0.2',
-    'description':'A Python package for Non-Poissonian Template Fitting',
-    'url':'https://github.com/bsafdi/NPTFit',
-    'author':'Siddharth Mishra-Sharma',
-    'author_email':'smsharma@princeton.edu',
-    'license':'MIT',
+setup_args = {
     'install_requires':[
             'numpy',
             'matplotlib',

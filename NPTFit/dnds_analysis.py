@@ -456,7 +456,7 @@ class Analysis:
             :param smooth_sig: std dev of the smoothing kernel [degrees]
         """
         
-        residual = np.array(self.nptf.count_map).astype(np.float)
+        residual = np.array(self.nptf.count_map).astype(np.float64)
 
         # Loop through floated and fixed models
         fix_keys = self.nptf.poiss_models_fixed.keys()

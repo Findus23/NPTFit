@@ -78,7 +78,7 @@ def psf_corr(nside, num_f_bins, n_psf, n_pts_per_psf, f_trunc, psf_r_func,
         # From this information determine the flux fraction per pixel
         mn = np.min(pixel)
         mx = np.max(pixel) + 1
-        pixel_hist = np.histogram(pixel, bins=mx - mn, range=(mn, mx), normed=1)[
+        pixel_hist = np.histogram(pixel, bins=mx - mn, range=(mn, mx), density=True)[
             0]
         outlist.append(pixel_hist)
 

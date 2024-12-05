@@ -27,7 +27,7 @@ def log_factorial(m):
 
 log_factorial_ary = np.vectorize(log_factorial)(np.arange(fct_max))
 
-def incgamma_up_fct_ary(np.int m_max, np.float z, np.float a):
+def incgamma_up_fct_ary(int m_max, float z, float a):
     """ Upper incomplete gamma function / m!
 
     Calculation performed using gamma function recursion relation.
@@ -51,7 +51,7 @@ def incgamma_up_fct_ary(np.int m_max, np.float z, np.float a):
 
     return np.asarray(igf_list,dtype=np.float64)
 
-def incgamma_lo_fct_ary(np.int m_max, np.float z, np.float a):
+def incgamma_lo_fct_ary(int m_max, float z, float a):
     """ Lower incomplete gamma function / m!
 
     Calculation performed using gamma function recursion relation.

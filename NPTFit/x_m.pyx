@@ -11,12 +11,12 @@ import numpy as np
 cimport numpy as np
 cimport cython
 try:
-    import incgamma_fct as igf
+    import NPTFit.incgamma_fct as igf
 except ImportError:
-    import incgamma_fct_p as igf
+    import NPTFit.incgamma_fct_p as igf
 
 # Type used for all non-integer functions
-DTYPE = np.float
+DTYPE = np.float64
 
 # Setup cython functions used
 cdef extern from "math.h":

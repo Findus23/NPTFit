@@ -1,0 +1,14 @@
+[project]
+name = "NPTFit"
+version = "0.2"
+description = "A Python package for Non-Poissonian Template Fitting"
+dynamic = ["dependencies"]
+license = {text = "MIT License"}
+authors = [
+    {name = "Siddharth Mishra-Sharma", email = "smsharma@princeton.edu"},
+]
+
+[project.urls]
+Repository="https://github.com/bsafdi/NPTFit"
+[build-system]
+requires = ["setuptools", "wheel", "Cython", "numpy"]
